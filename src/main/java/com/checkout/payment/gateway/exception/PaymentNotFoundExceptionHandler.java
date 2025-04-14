@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @ControllerAdvice
-public class CommonExceptionHandler {
+public class PaymentNotFoundExceptionHandler {
 
-  private static final Logger LOG = LoggerFactory.getLogger(CommonExceptionHandler.class);
+  private static final Logger LOG = LoggerFactory.getLogger(PaymentNotFoundExceptionHandler.class);
 
-  @ExceptionHandler(EventProcessingException.class)
-  public ResponseEntity<ErrorResponse> handleException(EventProcessingException ex) {
+  @ExceptionHandler(PaymentNotFoundException.class)
+  public ResponseEntity<ErrorResponse> handleException(PaymentNotFoundException ex) {
     LOG.error("Exception happened", ex);
     return new ResponseEntity<>(new ErrorResponse("Page not found"),
         HttpStatus.NOT_FOUND);

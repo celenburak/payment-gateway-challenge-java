@@ -16,56 +16,63 @@ public class GetPaymentResponse {
     return id;
   }
 
-  public void setId(UUID id) {
+  public GetPaymentResponse setId(UUID id) {
     this.id = id;
+    return this;
   }
 
   public PaymentStatus getStatus() {
     return status;
   }
 
-  public void setStatus(PaymentStatus status) {
+  public GetPaymentResponse setStatus(PaymentStatus status) {
     this.status = status;
+    return this;
   }
 
   public int getCardNumberLastFour() {
     return cardNumberLastFour;
   }
 
-  public void setCardNumberLastFour(int cardNumberLastFour) {
+  public GetPaymentResponse setCardNumberLastFour(int cardNumberLastFour) {
     this.cardNumberLastFour = cardNumberLastFour;
+    return this;
   }
 
   public int getExpiryMonth() {
     return expiryMonth;
   }
 
-  public void setExpiryMonth(int expiryMonth) {
+  public GetPaymentResponse setExpiryMonth(int expiryMonth) {
     this.expiryMonth = expiryMonth;
+    return this;
   }
 
   public int getExpiryYear() {
     return expiryYear;
   }
 
-  public void setExpiryYear(int expiryYear) {
+  public GetPaymentResponse setExpiryYear(int expiryYear) {
     this.expiryYear = expiryYear;
+    return this;
   }
 
   public String getCurrency() {
     return currency;
   }
 
-  public void setCurrency(String currency) {
+  public GetPaymentResponse setCurrency(String currency) {
     this.currency = currency;
+    return this;
   }
 
   public int getAmount() {
     return amount;
   }
 
-  public void setAmount(int amount) {
+  public GetPaymentResponse setAmount(int amount) {
     this.amount = amount;
+    return this;
   }
 
   @Override
